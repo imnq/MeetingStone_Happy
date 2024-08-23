@@ -4,8 +4,6 @@ on:
   push:
     tags:
       - '**'
-  schedule:
-    - cron: '0 * * * *'  # 每小时检查一次更新
 jobs:
   sync:
     runs-on: ubuntu-latest
