@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - '**'
+  schedule:
+    - cron: '0 */2 * * *'  # 每2小时的开始执行
 jobs:
   sync:
     runs-on: ubuntu-latest
